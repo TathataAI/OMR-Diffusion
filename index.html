@@ -23,8 +23,7 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>OMR-Diffusion:Optimizing Multi-Round Enhanced Training in Diffusion Models for Improved Intent Understanding</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -45,44 +44,25 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
+  
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">OMR-Diffusion:Optimizing Multi-Round Enhanced Training in Diffusion Models for Improved Intent Understanding</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yangfan He</a><sup>†</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Miao Zhang</a><sup>*</sup>
                   </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Dataset link -->
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -103,17 +83,14 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+            
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Shenzhen International Graduate School
+Tsinghua University</span>
+                    <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author</small></span>
+                  </div>
+            
             </div>
           </div>
         </div>
@@ -121,24 +98,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,8 +107,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Generative AI has significantly advanced text-driven image generation, but it still faces challenges in producing outputs that consistently align with evolving user preferences and intents, particularly in multi-turn dialogue scenarios.
+In this research, We present a Visual Co-Adaptation (VCA) framework that incorporates human-in-the-loop feedback, utilizing a well-trained reward model specifically designed to closely align with human preferences. Leveraging a diverse multi-turn dialogue dataset, the framework applies multiple reward functions—such as diversity, consistency, and preference feedback—while fine-tuning the diffusion model through LoRA, effectively optimizing image generation based on user input. 
+We also constructed multi-round dialogue datasets with prompts and image pairs that well-fit user intent. 
+Experiments show the model achieves 508 wins in human evaluation, outperforming DALL-E 3 (463 wins) and others. It also achieves 3.4 rounds in dialogue efficiency (vs. 13.7 for DALL-E 3) and excels in metrics like LPIPS (0.15) and BLIP (0.59). Various experiments demonstrate the effectiveness of the proposed method over state-of-the-art baselines, with significant improvements in image consistency and alignment with user intent. </p>
         </div>
       </div>
     </div>
@@ -157,133 +118,204 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
+<!-- Single Image Display -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="eval.pdf" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+         The workflow demonstrates how human preferences guide text-to-image diffusion, with a DPO-trained reward model evaluating image-prompt alignment and PPO updating LoRA parameters while keeping the diffusion model fixed.
+        </p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+  
+
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="visualization.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            A comparison of video generation quality across different algorithms, with and
+without the use of an adapter.
       </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Single Image Display -->
 
-
-<!-- Video carousel -->
+<!-- Single Image Display -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="token.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Figure 4: Comparison of token configurations—remove shared, shared, and enhanced un-
+shared—using LPIPS, CLIP, and FID metrics.</h2>
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Single Image Display -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- Single Image Display -->
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="atten.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Visualization of attention maps from Unet’s third upsampling block, comparing
+base and adapter models across 1000 timesteps. The corresponding timesteps from top to
+bottom are 1, 541, and 981.
+        </h2>
+        </p>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+<!-- End Single Image Display -->
 
 
+
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="token_appendix.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Visualization of token manipulation effects on image generation for a lion. ”En-
+hanced Unshared Tokens” combines shared and unshared embeddings, appending the shared
+token as a trainable parameter to strengthen representation.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+  
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="feature.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+                   Comparison of single-channel feature heatmaps with and without the adapter across
+frames and timesteps, with features from the attention layer in UNet blocks 4-11. Labels f1/f2
+denote adjacent frames, and t1/t2 represent timesteps (t1=932, t2=941) from the DDPM.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+
+  
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="openworld.png" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Visual comparison with other advanced approaches on DCIM, REAL, LIME and MEF.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="timesteps.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Performance comparison of video generation methods evaluated using metrics across
+temporal-aware loss training ranges (0.5–1.0t, 0.8–1.0t, 0.9–1.0t) and adapter inference ranges
+(0.5–1.0t, 0.8–1.0t, 0.9–1.0t), with t set to 1000.
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+
+
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="stepvis.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Visual comparison of a 0.5–1.0t training range for temporal-aware loss with a
+0.9–1.0t adapter activation in inference range versus setting both to 0.5t(t = 1000).
+        </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+
+ <!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <div class="item has-text-centered">
+        <img src="kernel.jpg" alt="MY ALT TEXT" />
+        <!-- Subtitle text container with centered text -->
+        <p class="subtitle">
+            Comparison of step and kernel sizes N (·) within bilateral filtering inversion in the
+Stable Diffusion pipeline. The observed trends are consistent with those in vid2vid and three
+other algorithms (not shown due to space limitations).
+      </h2>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
+  
+ <!-- Single Image Display -->
+<section class="hero is-small">
   <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
@@ -292,7 +324,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
